@@ -4,6 +4,9 @@
     <%= link_to feed_item.user.name, feed_item.user %>
   </span>
   <span class="content"><%= feed_item.content %></span>
+<% if feed_item.image? %>
+  <div><%= image_tag feed_item.image_url(:thumb) %></div>
+<% end %>
   <span class="timestamp">
     Posted <%= time_ago_in_words(feed_item.created_at) %> ago.
   </span>

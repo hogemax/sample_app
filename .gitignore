@@ -16,3 +16,5 @@
 /tmp
 /vendor/bundle
 /database.sqlite
+/public/uploads/tmp/
+/public/uploads/micropost/image/
